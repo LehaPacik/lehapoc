@@ -1,0 +1,167 @@
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL,"Rus");
+	float x;
+	cout<<("введи число")<<endl;
+	cin>>x;
+	if (x > 1000)
+	{
+		cout<<"не ну ты внатуре кабан"<<endl;
+		
+	}
+	if (x < 1000)
+	{
+		cout<<"чет ты мелковат"<<endl;
+		
+
+	}
+
+
+		system("pause");
+}
+
+
+
+__________________________________________________________________
+
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL,"Rus");
+	float x;
+	cout<<("введи число")<<endl;
+	cin>>x;
+	if(x==1)
+	{
+	cout<<"це один"<<endl;
+	}
+	if(x!=1)
+	{
+	cout<<"це не один"<<endl;
+	}
+
+
+
+			system("pause");
+}
+
+
+
+___________________________________________________________________
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL,"Rus");
+	float x,y;
+	cout<<("введи число 1")<<endl;
+	cin>>x;
+	cout<<("введи число 2")<<endl;
+	cin>>y;
+	if(x==y)
+	{
+		cout<<("они равны")<<endl;
+	}
+	else
+	{
+
+	if(x>y)
+	{
+		cout<<"первое число ис вери биг"<<endl;
+	}
+	else
+	{
+		cout<<"второе число ис вери биг"<<endl;
+	}
+
+
+}
+    system("pause");
+}
+
+
+____________________________________________________________________
+
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL,"Rus");
+	float a,b,c,d,x;
+	cout<<"введи число 1 чтобы решить пример x=(a+b)*c/d"<<endl;
+	cin>>a;
+	cout<<"введи число 2 чтобы решить пример x=(a+b)*c/d"<<endl;
+	cin>>b;
+	cout<<"введи число 3 чтобы решить пример x=(a+b)*c/d"<<endl;
+	cin>>c;
+	cout<<"введи число 4 чтобы решить пример x=(a+b)*c/d"<<endl;
+	cin>>d;
+
+
+	if(d!=0)
+	{
+		x=(a+b)*c/d;
+		cout<<"ответ к примеру x=(a+b)*c/d = "<<x<<" "<<endl; 
+	}
+	else
+	{
+		cout<<"ошибка"<<endl;
+	}
+	
+	
+
+
+	system("pause");
+}
+
+
+____________________________________________________________________
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL,"Rus");
+	float a;
+	a=0;
+	while(a==0)
+	{
+		cout<<"Gucci";
+		cout<<"      Gang";
+		
+	}
+	cout<<"введи 1000 чтобы закончить"<<endl;
+	cin>>a;
+
+	system("pause");
+
+}
+
+
+
+_____________________________________________________________________

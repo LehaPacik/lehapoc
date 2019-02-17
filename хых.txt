@@ -1,0 +1,775 @@
+#include <pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL,"Rus");
+	srand(time(NULL));
+	
+	int a = 0;
+	cout << "введи число" << endl;
+	cin >> a;
+	switch (a)
+	{
+	case 1:
+		{
+			cout << "понедельник" << endl;
+			break;
+		}
+	case 2:
+		{
+			cout << "вторник" << endl;
+			break;
+		}
+	case 3:
+		{
+			cout << "среда" << endl;
+			break;
+		}
+	case 4:
+		{
+			cout << "четверг" << endl;
+			break;
+		}
+	case 5:
+		{
+			cout << "пятница" << endl;
+			break;
+		}
+	case 6:
+		{
+			cout << "суббота" << endl;
+			break;
+		}
+	case 7:
+		{
+			cout << "воскресенье" << endl;
+			break;
+		}
+	    default:
+	    {
+		cout << "такого дня нет" << endl;
+	    }
+
+
+	}
+
+	system("pause");
+}
+
+
+__________________________________________________________________________________________________
+
+
+
+#include <pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL,"Rus");
+	srand(time(NULL));
+	
+	int a = 0;
+	int d = 0;
+	cout << "сколько человек живет в китае?" << endl;
+	cout << "1)  1 человек" << endl;
+	cout << "2)  1,2 млрд человек" << endl;
+	cout << "3)  8 млрд человек" << endl;
+	cin >> a;
+	if (a == 2)
+	{
+		d = d + 1;
+	}
+	cout << "что тяжелее, колограмм ваты или килограмм железа?" << endl;
+	cout << "1)  килограмм железа" << endl;
+	cout << "2)  килограмм ваты" << endl;
+	cout << "3)  они равны" << endl;
+	cin >> a;
+	if (a == 3)
+	{
+		d = d + 1;
+	}
+	cout << "глубина марианской впадины?" << endl;
+	cout << "1)  11022 метров" << endl;
+	cout << "2)  эверест" << endl;
+	cout << "3)  OVER 9999999999" << endl;
+	cin >> a;
+	if (a == 1)
+	{
+		d = d + 1;
+
+	}
+	cout << "ты набрал " << d << " очков" << endl;
+	system("pause");
+}
+
+
+
+
+
+_________________________________________________________________________________________
+
+
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	int mas[10];
+	int sum = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		cin >> mas[i];
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		cout << mas[i] << "   ";
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		sum = sum + mas[i];
+	}
+	cout << "сумма массивов = " << sum << endl;
+
+
+
+
+	system("pause");
+}
+
+
+
+__________________________________________________________________________________________
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	cout << "введи значения массива" << endl;
+	int mas[6];
+	int sum = 0;
+	for (int i = 0; i < 6; i++)
+	{
+		cin >> mas[i];
+	}
+	for (int i = 0; i < 6; i++)
+	{
+		cout << mas[i] << "   ";
+	}
+	for (int i = 0; i < 6; i++)
+	{
+		if (mas[i] % 2==0)
+		{
+			sum = sum + mas[i];
+		}
+	}
+	cout << "сумма елемнентов на четных позициях = " << sum << endl;
+
+
+
+
+	system("pause");
+}
+
+
+__________________________________________________________________________________________
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	cout << "введи значения массива" << endl;
+	int mas[6];
+	for (int i = 0; i < 6; i++)
+	{
+		mas[i] = rand() % 100 - 50;
+		cout << mas[i] << "  "<<endl;
+	}
+	
+	for (int i = 0; i < 6; i++)
+	{
+		if (mas[i] < 0)
+		{
+			mas[i] = 0;
+		}
+	}
+	for (int i = 0; i < 6; i++)
+	{
+		cout << mas[i] << "  ";
+	}
+	system("pause");
+}
+
+___________________________________________________________________________________________
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	cout << "введи значения массива" << endl;
+	int mas[6];
+	for (int i = 0; i < 6; i++)
+	{
+		mas[i] = rand() % 100 - 50;
+		cout << mas[i] << "  "<<endl;
+	}
+	
+	for (int i = 0; i < 6; i++)
+	{
+		if (mas[i-1]>=0 && mas[i+1]>=0 && mas[i]<0)
+		{
+			mas[i] = 0;
+		}
+	}
+	for (int i = 0; i < 6; i++)
+	{
+		cout << mas[i] << "  ";
+	}
+	system("pause");
+}
+
+______________________________________________________________________________________
+
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	const int n = 20;
+	
+	float mas[n];
+	for (int i = 0; i < n; i++)
+	{
+		mas[i] = (rand() % 101 - 50) / 10.0;
+		cout << mas[i] << " " << endl;
+	}
+
+	float max = mas[0];
+	for (int i = 0; i < n; i++)   // поиск макс элемента массива
+	{
+		if (mas[i] > max)
+		{
+			max = mas[i];
+		}
+	}
+	cout << "   " << endl;
+	cout <<"максимальный элемент массива = "<< max<<endl;
+
+	int sum = 0;
+
+	for (int i = 0; i < n; i++) 
+	{
+		if (mas[i] > 0)
+		{
+			sum = sum + 1;
+		}
+	}
+	cout << "количество положительных элементов = " << sum << endl;
+
+
+
+
+	int sum2 = 0;
+	if (sum >= 2)
+	{
+		cout << "достаточно положительных" << endl;
+	}
+	else
+	{
+		cout << "Недостаточно положительных" << endl;
+	}
+	for (int i = n - 1; i >= 0; i--)
+	{
+		if (mas[1] > 0 && mas[i] > 0)
+		{
+			sum2 = sum2 + mas[i]; 
+		}
+	}
+	cout << sum2 << endl;
+
+	system("pause");
+}
+
+
+_______________________________________________________________________________________
+
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	int k = 0;
+	int p = 0;
+	int r = 0;
+	int dengi = 0;
+	int godi = 0;
+
+
+	cout << "введи сумму кредита" << endl;
+	cin >> k;
+	cout << "введи процент годовых" << endl;
+	cin >> p;
+	cout << "введи годовой доход" << endl;
+	cin >> r;
+
+	while (k > dengi)
+	{
+		k = k + k * p / 100;
+		dengi = dengi + r;
+		godi = godi + 1;
+		if (k*p / 100 > r)
+		{
+			cout << "ne pogasish" << endl;
+			return 0;
+		}
+	}
+
+	cout << "nado  " << godi << "  let" << endl;
+
+
+	system("pause");
+}
+
+_______________________________________________________________________________________
+
+
+#include <pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	const int n = 10;
+	const int m = 10;
+	int mas[n][m];
+	int sum = 0;
+		
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
+			mas[i][j] = rand() % 90 + 10;
+			cout << mas[i][j] << " " ;
+			
+			
+			
+		}
+
+		cout << endl;
+	}
+	cout << endl;
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
+			
+			if (mas[i][j] < mas[i][j + 1] && mas[i][j] < mas[i][j - 1] && mas[i][j] < mas[i + 1][j] && mas[i][j] < mas[i - 1][j + 1])
+			{
+				mas[i][j] = -1;
+			}
+
+
+		}
+
+		
+	}
+	 
+	
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
+			cout << mas[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	system("pause");
+}
+
+
+_______________________________________________________________________________________
+
+
+
+#include<pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+
+	const int n = 20;
+
+	float mas[n];
+	for (int i = 0; i < n; i++)
+	{
+		mas[i] = (rand() % 101 - 50) / 10.0;
+		cout << mas[i] << " " << endl;
+	}
+
+	float max = mas[0];
+	for (int i = 0; i < n; i++)   // поиск макс элемента массива
+	{
+		if (mas[i] > max)
+		{
+			max = mas[i];
+		}
+	}
+	cout << "   " << endl;
+	cout << "максимальный элемент массива = " << max << endl;
+
+
+	float min = mas[0];
+	for (int i = 0; i < n; i++)   // поиск мин элемента массива
+	{
+		if (mas[i] < min)
+		{
+			min = mas[i];
+		}
+	}
+	cout << "   " << endl;
+	cout << "минимальный элемент массива = " << min << endl;
+
+	int sum = 0;
+
+	for (int i = 0; i < n; i++)
+	{
+		if (mas[i] > 0)
+		{
+			sum = sum + mas[i];
+		}
+	}
+	cout << "сумма положительных элементов = " << sum << endl;
+
+
+	int max_i = 0; int min_i = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (mas[i]);
+	}
+	
+
+	for (int i = max_i; i < min_i; i++)
+	{
+
+	}
+
+	system("pause");
+}
+
+
+_________________________________________________________________________________________
+
+
+
+#include <pch.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+	int a = 0;
+	int*mas = new int[a];
+	int ch = 1;
+	while (ch != 0)
+	{
+		cout << "vvesti chislo" << endl;
+		cin >> ch;
+		if (ch != 0)
+		{
+			int*buf = new int[a + 1];
+			for (int i = 0; i < a; i++)
+			{
+				buf[i] = mas[i];
+			}
+			buf[a] = ch;
+			delete[] mas;
+			mas = buf;
+			a++;
+			for (int i = 0; i < a; i++)
+			{
+				cout << buf[i] << "  " ;
+			}
+		}
+		else
+		{
+			break;
+		}
+		
+
+	}
+
+
+
+
+
+	delete[] mas;
+	system("pause");
+}
+
+____________________________________________________________________________________
+
+
+#include <pch.h>
+#include <iostream> 
+#include <string> 
+#include <windows.h>
+using namespace std;
+
+int main()
+{
+	
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	system("COLOR A");
+	setlocale(LC_ALL, "Rus");
+	string str;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
+	int e = 0;
+	int f = 0;
+
+	getline(cin, str);
+	cout << str << endl;
+
+	for (int i = 0; i < str.length(); i++)
+	{
+		if (str[i] == '(')
+		{
+			a++;
+		}
+		if (str[i] == ')')
+		{
+			b++;
+		}
+		if (str[i] == '{')
+		{
+			c++;
+		}
+		if (str[i] == '}')
+		{
+			d++;
+		}
+		if (str[i] == '[')
+		{
+			e++;
+		}
+		if (str[i] == ']')
+		{
+			f++;
+		}
+		
+	}
+	if (a == b && c == d && e == f)
+	{
+		cout << "кла$$" << endl;
+	}
+	else
+	{
+		cout << "программа написана с ошибками" << endl;
+	}
+	cout << "(=" << a << endl;
+	cout << ")=" << b << endl;
+	cout << "{=" << c << endl;
+	cout << "}=" << d << endl;
+	cout << "[=" << e << endl;
+	cout << "]=" << f << endl;
+	system("pause");
+	return 0;
+
+}
+
+
+
+________________________________________________________________________________________________
+
+
+#include <pch.h>
+#include <iostream> 
+#include <string> 
+#include <windows.h>
+using namespace std;
+
+int main()
+{
+	
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	system("COLOR A");
+	setlocale(LC_ALL, "Rus");
+	string str;
+	int a = 0;
+	
+
+	getline(cin, str);
+	cout << str << endl;
+
+	for (int i = str.length() - 1; i >=0 ; i--)
+	{
+		cout << str[i];
+	}
+	
+	
+	system("pause");
+	return 0;
+
+}
+
+
+________________________________________________________________________________________________
+
+
+
+#include <pch.h>
+#include <iostream> 
+#include <string> 
+#include <windows.h>
+using namespace std;
+
+int main()
+{
+	
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	system("COLOR A");
+	setlocale(LC_ALL, "Rus");
+	string text;
+	
+
+	getline(cin, text);
+	for (int i = 0; i < text.length(); i++)
+	{
+		if (text[i] == ' ')
+		{
+			text.erase(text.begin()+ i);
+			text[i] = toupper(text[i]);
+			i--;
+		}
+		
+		
+	}
+	text[0] = toupper(text[0]);
+	cout << text << endl;
+	
+	
+	system("pause");
+	return 0;
+
+}
+
+
+
+
+____________________________________________________________________________________________
+
+
+
+
+#include <pch.h>
+#include <iostream> 
+#include <string> 
+#include <windows.h>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	system("COLOR A");
+	ofstream fout;
+	ifstream fin;
+	string str = "  ";
+	string text;
+	getline (fin, str);
+	fin.open("C:\\Users\\pupil\\Desktop\\smekta\\Sas.txt");
+	fout.open("C:\\Users\\pupil\\Desktop\\smekta\\minecraft.txt");
+	while (!fin.eof())
+	{
+		getline(fin, str);
+		text = text + str + "\n";
+	}
+	fout <<text<< endl;
+	fout.close();
+	fin.close();
+
+	
+
+
+
+	system("pause");
+
+
+}
+
+
+
+_________________________________________________________________________________________________
+
+#include <pch.h>
+#include <iostream> 
+#include <string> 
+#include <windows.h>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+string str = "ddosN"; 
+for (int i = 0; i < 20; i++) 
+{ 
+ofstream ddos; 
+str[str.length() - 1] = (char)(i + 100); 
+ddos.open("D:\\Users\\admin\\Desktop\\test\\" + str + ".txt"); 
+for (int j = 0; j < 200; j++) 
+ddos « "sadasf" « endl; 
+ddos.close(); 
+}
+system("pause");
+}
+
+_________________________________________________________________________________________________

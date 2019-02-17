@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{
+	setlocale(LC_ALL,"Rus");
+
+
+	double x;  //объ€вление
+	double y;
+	double z;
+	double d;
+
+	cout<<"¬ведите X чтобы решить пример d=(x+y)*y/z"<<endl;
+	cin>>x;
+
+	cout<<"¬ведите y чтобы решить пример d=(x+y)*y/z"<<endl;
+	cin>>y;
+	
+	cout<<"¬ведите z чтобы решить пример d=(x+y)*y/z"<<endl;
+	cin>>z;
+
+
+	d = ( x + y ) * y / z;
+	cout<<"пример (x+y)*y/z равен "<<d<<" —пасибо за внимание"<<endl;
+
+
+
+
+	system("pause");
+}

@@ -1,0 +1,182 @@
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL, "Rus");
+    int month;
+	cout<<"введите номер мес€ца"<<endl;
+	cin>>month;
+	 if (month == 1)
+	 {
+		 cout<<"€нварь"<<endl;
+	 }
+	 if (month == 2)
+	 {
+		 cout<<"февраль"<<endl;
+	 }
+	 if (month == 3)
+	 {
+		 cout<<"март"<<endl;
+	 }
+	 if (month == 4)
+	 {
+		 cout<<"апрель"<<endl;
+	 }
+	 if (month == 5)
+	 {
+		 cout<<"май"<<endl;
+	 }
+	 if (month == 6)
+	 {
+		 cout<<"июнь"<<endl;
+	 }
+	 if (month == 7)
+	 {
+		 cout<<"июль"<<endl;
+	 }
+	 if (month == 8)
+	 {
+		 cout<<"август"<<endl;
+	 }
+	 if (month == 9)
+	 {
+		 cout<<"сент€брь"<<endl;
+	 }
+	 if (month == 10)
+	 {
+		 cout<<"окт€брь"<<endl;
+	 }
+	 if (month == 11)
+	 {
+		 cout<<"но€брь"<<endl;
+	 }
+	 if (month == 12)
+	 {
+		 cout<<"декабрь"<<endl;
+	 }
+	 if (month < 1)
+	 {
+		 cout<<"ошибка"<<endl;
+	 }
+	 if (month > 12)
+	 {
+		 cout<<"ошибка"<<endl;
+	 }
+	 
+	system("pause");
+}
+
+
+
+_______________________________________________________________
+
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL, "Rus");
+
+	int month;
+	cout<<" введи номер мес€ца"<<endl;
+	cin>>month;
+	if (month > 11)
+	{
+		if (month < 3)
+		{
+			cout<<"зима"<<endl;
+		}
+	}
+	if (month > 2)
+	{
+		if (month < 6)
+		{
+			cout<<"весна"<<endl;
+		}
+	}
+	if (month > 5)
+	{
+		if (month < 9)
+		{
+			cout<<"лето"<<endl;
+		}
+	}
+	if (month > 8)
+	{
+		if (month < 12)
+		{
+			cout<<"зима"<<endl;
+		}
+	}
+
+
+					system("pause");
+
+
+
+________________________________________________________
+
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL, "Rus");
+	
+	int a = 0;
+	while (a < 1000)
+	{
+		a=a+1;
+		cout<<a<<endl;
+		
+	
+	}
+
+	system("pause");
+}
+
+
+____________________________________________________________
+
+
+
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+{ 
+	setlocale(LC_ALL, "Rus");
+	int n;
+	cout<<"сколько чисел надо просуммировать"<<endl;
+	cin>>n;
+	
+	int a = 0;
+	int sum = 0;
+	while (a < n)
+	{
+		a = a + 1;
+		sum = sum + a;
+	
+	}
+	cout<<sum<<endl;
+	system("pause");
+}
+
+
+
+______________________________________________________________
+
+
